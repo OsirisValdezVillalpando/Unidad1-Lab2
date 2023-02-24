@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:padding="10dp"
+            android:text="@string/Futbolistas"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imagenFutbolista"
+            android:layout_width="match_parent"
+            android:layout_height="217dp"
+            android:layout_below="@+id/tema"
+            android:layout_marginTop="-1dp"
+            app:srcCompat="@drawable/messi"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/nombreFutbolista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagenFutbolista"
+            android:text="@string/Messi"
+            android:textStyle="bold"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/descripcionFutbolista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombreFutbolista"
+            android:padding="10dp"
+            android:text="@string/DescripcionMessi" />
+
+        <Button
+            android:id="@+id/btnAnterior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/descripcionFutbolista"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/purple_500"
+            android:text="@string/Anterior"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSiguente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnAnterior"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            android:text="@string/Siguente"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+</ScrollView>
